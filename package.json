@@ -1,13 +1,13 @@
 {
-  "name": "week2",
+  "name": "assignment1",
   "version": "0.0.1",
-  "description": "comp229 week2 example",
+  "description": "COMP229-F2022-Assignment1",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "tony",
+  "author": "Tony Han",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.0",
