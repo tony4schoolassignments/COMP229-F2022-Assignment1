@@ -3,7 +3,7 @@ export function displayHomePage(req, res, next){
 };
 
 export function displayAboutPage(req, res, next){
-    res.render('index', { title: 'About', page: 'about' });
+    res.render('index', { title: 'About Me', page: 'about' });
 };
 
 export function displayProjectsPage(req, res, next){
