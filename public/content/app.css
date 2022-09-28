@@ -27,12 +27,32 @@ h5{
     margin-left: auto;
     margin-right: auto;
 }
+.p1{
+    color:red;
+}
 .projecttext{
+    color:red;
     font-size: 17px;
     font-weight: bold;
 }
-.redtext{
-    color:red;
+.p2{
+    color:blue;
+}
+.project2text{
+    color:blue;
+    font-size: 17px;
+    font-weight: bold;
+}
+.p3{
+    color:purple
+}
+.project3text{
+    color:purple;
+    font-size: 17px;
+    font-weight: bold;
+}
+.p3text{
+    color: purple;
     font-weight: bold;
     text-align: center
 }
