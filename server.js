@@ -1,3 +1,13 @@
+/*
+    COMP229-401 Fall 2022
+    Assignment 1 - Express Portfolio Site
+    Date: October 1, 2022
+
+    Author: Junesik (Tony) Han
+    Student #: 301252900
+
+    Filename: server.js
+*/
 import debug from 'debug';
 debug('comp-229');
 import http from 'http'
