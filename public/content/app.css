@@ -124,3 +124,29 @@ textarea {
 body{
     background-image:url("images/banner.png");
 }
+.serviceContainer{
+    margin-top: 25px;
+    border-radius: 25px;
+    background-color: gray;
+    padding: 10px;
+    box-shadow: 10px 10px 20px black;
+}
+.column{
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.language{
+    width:50px;
+    height:50px;
+}
+.listtext{
+    font-size:20px;
+    font-weight:bold;
+}
