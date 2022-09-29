@@ -9,7 +9,8 @@
     Filename: app.css
 */
 .intro{
-    color:blue;
+    font-size: 25px;
+    font-weight: bold;
 }
 .homePic{
     font-weight: bold;
@@ -22,6 +23,8 @@
 }
 h1{
     text-align: center;
+    font-weight: bold;
+    font-size: 60px;
 }
 h5{
     font-size: 15px;
@@ -106,6 +109,7 @@ input[type="reset"]
 }
 .text2{
     font-size:25px;
+    font-weight: bold;
 }
 .formCenter{
     margin: auto;
