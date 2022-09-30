@@ -9,10 +9,12 @@
     Filename: index.route.server.js
 */
 import { Router } from 'express';
+// importing functions from index.controller.server.js
 import {  displayAboutPage, displayContactPage, displayHomePage, displayProjectsPage, displayServicesPage } from '../controllers/index.controller.server.js';
 
+// instantiate router 
 const router = Router();
-
+// wiring the path to their respective function that will render the page
 router.get('/', displayHomePage);
 router.get('/home', displayHomePage);
 router.get('/about', displayAboutPage);

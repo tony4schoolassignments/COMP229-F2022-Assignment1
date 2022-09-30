@@ -13,15 +13,16 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import session from 'express-session';
+
 // ES modules fix for __dirname
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-// Configuration mudule
+// Configuration module
 import { Secret } from '../config/config.js';
 
-// Import routes
+// Import routes from index.route.server.js
 import indexRouter from "./routes/index.route.server.js"
 
 // Instantiate Express
@@ -31,10 +32,11 @@ const app = express();
 // Set up ViewEngine EJS
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
+// Using third party modules
 app.use(logger('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-//app.use(express.static(path.join(__dirname, '/client')));
+// Loading public folder as static files on client side
 app.use(express.static(path.join(__dirname, '../public')));
 app.unsubscribe(session({
     secret: Secret,
@@ -42,7 +44,7 @@ app.unsubscribe(session({
     resave: false
 }));
 
-// Use routes
+// Use routes from index.route.server.js
 app.use('/', indexRouter);
 
 export default app;
