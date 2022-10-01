@@ -8,7 +8,7 @@
 
     Filename: app.js
 */
-// Third part modules
+// Third party modules
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
